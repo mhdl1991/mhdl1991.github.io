@@ -167,7 +167,7 @@ p { margin: 0; }
   padding-bottom: 96px;
 }
 
-.hero-copy { display: flex; flex-direction: column; gap: 28px; }
+.hero-copy { display: flex; flex-direction: column; gap: 28px; max-width: 760px; }
 .hero-copy .eyebrow { letter-spacing: 0.04em; }
 
 .hero-title {
