@@ -398,3 +398,42 @@ p { margin: 0; }
   font-size: 14px;
   color: var(--text-dim);
 }
+
+/* ---------- Compact About + Recent work ---------- */
+/* Paste at the end of styles.css */
+
+.chips-label {
+  margin-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.chips-label + .chips { margin-top: -8px; }
+
+.section-compact { padding-top: 112px; padding-bottom: 112px; }
+
+.work-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.work-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+}
+.work-list li:first-child { border-top: 0; padding-top: 0; }
+.work-list li:last-child { padding-bottom: 0; }
+.work-list h3 { font-size: 20px; }
+.work-list p:not(.card-tag) { color: var(--text-muted); font-size: 16px; }
+.work-list .card-tag {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-dim);
+}
